@@ -21,6 +21,19 @@ class ofApp : public ofBaseApp{
     ofxOscReceiver rev;
 	ofxOscSender sender;
 
+	//検出パラメータ
+	float lifeTime         = 1;    //足の寿命[s]
+	float matchWindow      = 0.1;  //連続とみなす時間[s]
+	float matchMaxDist     = 1;    //連続とみなす距離[m]
+	float landingSpeed     = 0.8;  //着地とみなす速度[m/s]
+	float directionWindow  = 0.5;  //足跡の向きを決定するために参照する過去の足の時間[s]
+	float stampLifeTime    = 2;    //足跡スタンプの寿命[s]
+	float prevStampWindow  = 2.0;  //直前の足跡を探す時間[s]
+	float prevStampMinDist = 0.25; //直前の足跡とみなす最小距離[m]
+	float prevStampMaxDist = 0.9;  //直前の足跡とみなす最大距離[m]
+	float blockerRadius    = 0.2;  //足跡設置禁止領域の半径[m]
+	float blockerLifeTime  = 0.15; //足跡設置禁止領域の寿命[s]
+
 	struct Foot {
 		glm::vec2 pos;
 		glm::vec2 vel;
@@ -29,9 +42,6 @@ class ofApp : public ofBaseApp{
 		float area=0;
 	};
 	map<uint64_t,vector<Foot>> footHistory;
-	float lifeTime=1;//足の寿命[s]
-	float matchWindow=0.1;//連続とみなす時間[s]
-	float matchMaxDist=1;//連続とみなす距離[m]
 
 	const Foot & findOldestLinkedFoot(const Foot & _start,float _window);
 
@@ -48,14 +58,6 @@ class ofApp : public ofBaseApp{
 		int side=UNDEFINED;
 	};
 	map<uint64_t,vector<FootStamp>> footStampHistory;
-	float landingSpeed=0.8;//着地とみなす速度[m/s]
-	float directionWindow=0.5;//足跡の向きを決定するために参照する過去の足の時間[s]
-	float stampLifeTime=2;//足跡スタンプの寿命[s]
-
-	float prevStampWindow  = 2.0;   // 直前の足跡を探す時間[s]
-	float prevStampMinDist = 0.25;  // 直前の足跡とみなす最小距離[m]
-	float prevStampMaxDist = 0.9;   // 直前の足跡とみなす最大距離[m]
-
 
 	// history の中から、now より前の window[s] 以内で、pos から minDist〜maxDist にある最も近い要素の住所を返す
 // 見つからなければ (0,-1)
@@ -75,9 +77,12 @@ class ofApp : public ofBaseApp{
 		uint64_t lastSeen = 0;
 	};
 	vector<Blocker> blockers;
-	float blockerRadius=0.2;//足跡設置禁止領域の半径[m]
-	float blockerLifeTime=0.15;//足跡設置禁止領域の寿命[s]
+
+	string distIp="localhost";
+	int distPort=10002;
 
 	ofxImGui::Gui gui;
+
+	void sendFootStampOSC(const FootStamp & _fs);//足跡スタンプをOSCで送信する
 
 };

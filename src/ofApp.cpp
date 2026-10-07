@@ -2,6 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    sender.setup(distIp, distPort);
     rev.setup(10001);
     gui.setup();
     ofSetFrameRate(60);
@@ -83,6 +84,7 @@ void ofApp::update(){
 
 
                             footStampHistory[timeStamp].push_back(fs);
+
                             Blocker b;
                             b.pos=fs.pos;
                             b.lastSeen=timeStamp;
@@ -274,6 +276,18 @@ pair<uint64_t,int> ofApp::findNearestInWindow(
         }
     }
     return nearest;
+}
+
+void ofApp::sendFootStampOSC(const FootStamp & _fs){
+    ofxOscMessage msg;
+    msg.setAddress("/footstamp");
+    msg.addInt64Arg(ofGetElapsedTimeMicros());
+    msg.addFloatArg(_fs.pos.x);
+    msg.addFloatArg(_fs.pos.y);
+    msg.addFloatArg(_fs.dir.x);
+    msg.addFloatArg(_fs.dir.y);
+    msg.addInt32Arg(_fs.side);
+    sender.sendMessage(msg,false);
 }
 
 //--------------------------------------------------------------
