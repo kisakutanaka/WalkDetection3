@@ -2,8 +2,9 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    loadConfig();
     sender.setup(distIp, distPort);
-    rev.setup(10001);
+    rev.setup(listenPort);
     gui.setup();
     ofSetFrameRate(60);
 }
@@ -81,8 +82,7 @@ void ofApp::update(){
                                     }
                                 }
                             }
-
-
+                            sendFootStampOSC(fs);
                             footStampHistory[timeStamp].push_back(fs);
 
                             Blocker b;
@@ -140,9 +140,48 @@ void ofApp::checkFootStampLife(){
         if(now-it->first>stampLifeTime*1e9){
             it=footStampHistory.erase(it);
         }else{
-            break; 
+            break;
         }
     }
+}
+
+void ofApp::saveConfig(){
+    ofJson json;
+    json["lifeTime"]=lifeTime;
+    json["matchWindow"]=matchWindow;
+    json["matchMaxDist"]=matchMaxDist;
+    json["landingSpeed"]=landingSpeed;
+    json["directionWindow"]=directionWindow;
+    json["stampLifeTime"]=stampLifeTime;
+    json["prevStampWindow"]=prevStampWindow;
+    json["prevStampMinDist"]=prevStampMinDist;
+    json["prevStampMaxDist"]=prevStampMaxDist;
+    json["blockerRadius"]=blockerRadius;
+    json["blockerLifeTime"]=blockerLifeTime;
+    json["distIp"]=distIp;
+    json["distPort"]=distPort;
+    json["listenPort"]=listenPort;
+    ofSavePrettyJson("config.json",json);
+}
+
+void ofApp::loadConfig(){
+    if(!ofFile::doesFileExist("config.json"))return;
+    ofJson json=ofLoadJson("config.json");
+    //キーがない場合は今の値のまま
+    lifeTime=json.value("lifeTime",lifeTime);
+    matchWindow=json.value("matchWindow",matchWindow);
+    matchMaxDist=json.value("matchMaxDist",matchMaxDist);
+    landingSpeed=json.value("landingSpeed",landingSpeed);
+    directionWindow=json.value("directionWindow",directionWindow);
+    stampLifeTime=json.value("stampLifeTime",stampLifeTime);
+    prevStampWindow=json.value("prevStampWindow",prevStampWindow);
+    prevStampMinDist=json.value("prevStampMinDist",prevStampMinDist);
+    prevStampMaxDist=json.value("prevStampMaxDist",prevStampMaxDist);
+    blockerRadius=json.value("blockerRadius",blockerRadius);
+    blockerLifeTime=json.value("blockerLifeTime",blockerLifeTime);
+    distIp=json.value("distIp",distIp);
+    distPort=json.value("distPort",distPort);
+    listenPort=json.value("listenPort",listenPort);
 }
 
 //--------------------------------------------------------------
@@ -225,10 +264,40 @@ void ofApp::draw(){
     ImGui::SetWindowPos(ImVec2(600,100));
     ImGui::Text("%s",ofToString(ofGetFrameRate()).c_str());
     ImGui::DragFloat("Life Time [s]", &lifeTime, 0.1f, 0.1f, 10.0f);
-    ImGui::DragFloat("Match Window [s]", &matchWindow, 0.1f, 0.1f, 10.0f);
-    ImGui::DragFloat("Landing Speed [m/s]", &landingSpeed, 0.1f, 0.1f, 10.0f);
+    ImGui::DragFloat("Match Window [s]", &matchWindow, 0.01f, 0.03f, 1.0f);
+    ImGui::DragFloat("Match Max Dist [m]", &matchMaxDist, 0.01f, 0.1f, 3.0f);
+    ImGui::DragFloat("Landing Speed [m/s]", &landingSpeed, 0.01f, 0.05f, 5.0f);
+    ImGui::DragFloat("Direction Window [s]", &directionWindow, 0.01f, 0.05f, 1.0f);
+    ImGui::DragFloat("Stamp Life Time [s]", &stampLifeTime, 0.1f, 0.1f, 10.0f);
+    ImGui::DragFloat("Prev Stamp Window [s]", &prevStampWindow, 0.1f, 0.1f, 10.0f);
+    ImGui::DragFloat("Prev Stamp Min Dist [m]", &prevStampMinDist, 0.01f, 0.0f, 2.0f);
+    ImGui::DragFloat("Prev Stamp Max Dist [m]", &prevStampMaxDist, 0.01f, 0.0f, 3.0f);
     ImGui::DragFloat("Blocker Radius [m]", &blockerRadius, 0.01f, 0.01f, 1.0f);
-    ImGui::DragFloat("Blocker Life Time [s]", &blockerLifeTime, 0.1f, 0.1f, 10.0f);
+    ImGui::DragFloat("Blocker Life Time [s]", &blockerLifeTime, 0.01f, 0.0f, 1.0f);
+
+    //送信先(Enterで反映)
+    char ipBuf[64];
+    strncpy(ipBuf,distIp.c_str(),sizeof(ipBuf)-1);
+    ipBuf[sizeof(ipBuf)-1]='\0';
+    if(ImGui::InputText("Dist IP",ipBuf,sizeof(ipBuf),ImGuiInputTextFlags_EnterReturnsTrue)){
+        distIp=ipBuf;
+        sender.setup(distIp, distPort);
+    }
+    if(ImGui::InputInt("Dist Port",&distPort,0,0,ImGuiInputTextFlags_EnterReturnsTrue)){
+        sender.setup(distIp, distPort);
+    }
+
+    //受信ポート(Resetで反映)
+    ImGui::InputInt("Listen Port",&listenPort,0,0);
+    ImGui::SameLine();
+    if(ImGui::Button("Reset"))rev.setup(listenPort);
+
+    if(ImGui::Button("Save"))saveConfig();
+    ImGui::SameLine();
+    if(ImGui::Button("Load")){
+        loadConfig();
+        sender.setup(distIp, distPort);//送信先が変わっている場合に備えて再設定する
+    }
     gui.end();
 }
 
@@ -281,12 +350,15 @@ pair<uint64_t,int> ofApp::findNearestInWindow(
 void ofApp::sendFootStampOSC(const FootStamp & _fs){
     ofxOscMessage msg;
     msg.setAddress("/footstamp");
-    msg.addInt64Arg(ofGetElapsedTimeMicros());
+    // msg.addInt64Arg(ofGetElapsedTimeMicros());
     msg.addFloatArg(_fs.pos.x);
     msg.addFloatArg(_fs.pos.y);
     msg.addFloatArg(_fs.dir.x);
     msg.addFloatArg(_fs.dir.y);
-    msg.addInt32Arg(_fs.side);
+    if(_fs.side!=UNDEFINED){
+        msg.addInt32Arg(_fs.side);
+    }
+    else msg.addInt32Arg(LEFT);
     sender.sendMessage(msg,false);
 }
 

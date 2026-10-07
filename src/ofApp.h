@@ -18,6 +18,9 @@ class ofApp : public ofBaseApp{
 		void checkFootLife();//足の寿命をチェックして古いものを削除する
 		void checkFootStampLife();//足のスタンプの寿命をチェックして古いものを削除する
 
+		void saveConfig();//検出パラメータをconfig.jsonに保存する
+		void loadConfig();//config.jsonから検出パラメータを読み込む
+
     ofxOscReceiver rev;
 	ofxOscSender sender;
 
@@ -30,7 +33,7 @@ class ofApp : public ofBaseApp{
 	float stampLifeTime    = 2;    //足跡スタンプの寿命[s]
 	float prevStampWindow  = 2.0;  //直前の足跡を探す時間[s]
 	float prevStampMinDist = 0.25; //直前の足跡とみなす最小距離[m]
-	float prevStampMaxDist = 0.9;  //直前の足跡とみなす最大距離[m]
+	float prevStampMaxDist = 2;  //直前の足跡とみなす最大距離[m]
 	float blockerRadius    = 0.2;  //足跡設置禁止領域の半径[m]
 	float blockerLifeTime  = 0.15; //足跡設置禁止領域の寿命[s]
 
@@ -80,6 +83,7 @@ class ofApp : public ofBaseApp{
 
 	string distIp="localhost";
 	int distPort=10002;
+	int listenPort=10001;
 
 	ofxImGui::Gui gui;
 
