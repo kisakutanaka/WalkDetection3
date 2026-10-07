@@ -1,0 +1,1095 @@
+{
+	"archiveVersion": "1",
+	"classes": {},
+	"objectVersion": "54",
+	"objects": {
+		"0825D339-1368-4EEA-9415-694E97D01A81": {
+			"fileRef": "BC8C3306-F7D4-4000-842F-4AF6CBCBB233",
+			"isa": "PBXBuildFile"
+		},
+		"0DE8E07F-C187-4BA8-BBEF-78D1D3DD1B89": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscOutboundPacketStream.cpp",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"103261B5-74C3-4479-A15E-0854CB887C69": {
+			"children": [
+				"1C4CA613-C3E0-402B-BFEC-A66578B18B67",
+				"D4D73B40-D483-41B5-B2B9-F086412891B2"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"12FB6B5E-D850-49CC-8E19-D9D34BCC9E51": {
+			"fileRef": "82A5D1D9-9731-43EC-B0E4-74DFFF10C293",
+			"isa": "PBXBuildFile"
+		},
+		"177BD465-CB04-4943-897F-5489C2FF5E7B": {
+			"fileRef": "A6112FD2-F621-43C8-8AB2-82B78F309B8D",
+			"isa": "PBXBuildFile"
+		},
+		"180CBED9-81C8-4B35-A022-7C65D581F651": {
+			"fileRef": "8F016D78-B425-4449-A36E-703B24FC82FA",
+			"isa": "PBXBuildFile"
+		},
+		"191CD6FA2847E21E0085CBB6": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.entitlements",
+			"path": "of.entitlements",
+			"sourceTree": "<group>"
+		},
+		"191EF70929D778A400F35F26": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "folder",
+			"name": "openFrameworks",
+			"path": "../../../libs/openFrameworks",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"19B789C429E5AB4A0082E9B8": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputFileListPaths": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"outputFileListPaths": [],
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n",
+			"showEnvVarsInLog": "0"
+		},
+		"19C3D1E2-6839-41E2-90DF-73F9B168CFF5": {
+			"children": [
+				"57879E31-40F5-499C-82C1-09664195B248",
+				"D2170E26-226D-4316-8AE1-364D865A0EBF"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxImGui",
+			"path": "../../../addons/ofxImGui",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"1B6D09DD-6E63-4055-A873-106A7434C46E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOsc.h",
+			"path": "../../../addons/ofxOsc/src/ofxOsc.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"1C4CA613-C3E0-402B-BFEC-A66578B18B67": {
+			"children": [
+				"B30352F7-5BB1-48BC-8A35-83392E5EEFEE",
+				"F460FB96-1D94-4E0D-8BC1-FE9F00290F9B",
+				"F08548B3-14C3-4B15-A14A-1A0936D2DF55",
+				"41C162DD-947D-4C8C-822E-EF18E3B44CA4",
+				"2EBCB383-88A1-4699-BB51-2A64693E6DFE",
+				"31FAF0D3-02BC-4375-A527-2C397CCA89BD",
+				"DDB8D2F5-0B84-47F2-B594-9A551FFDA12C"
+			],
+			"isa": "PBXGroup",
+			"name": "ip",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/ip",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"1F3B237E-E95C-459A-A7AC-EB396C28449E": {
+			"fileRef": "BEEE5B23-88D6-45D6-8027-6D08295F5D07",
+			"isa": "PBXBuildFile"
+		},
+		"1F6AE525-6534-4FA2-BA67-BF9443676FC6": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscReceivedElements.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"203184D7-56FB-422A-98FF-328FD9F23D93": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ImHelpers.cpp",
+			"path": "../../../addons/ofxImGui/src/ImHelpers.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"235AC5D0-60FC-40B9-89E3-EA5C1476AA61": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscPacketListener.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscPacketListener.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2487D527-11E4-4F71-B902-4A3139696D3D": {
+			"fileRef": "36BC2401-925E-4B9A-B0FF-F8E0806D002A",
+			"isa": "PBXBuildFile"
+		},
+		"28FF64CC-8108-42C7-9FE7-C683981E0BCB": {
+			"fileRef": "5F3817EC-2516-4A1E-AD10-115FCDD6D5E7",
+			"isa": "PBXBuildFile"
+		},
+		"29C52CB6-C09D-4A62-BE9A-7EA58A0A63C6": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "DefaultTheme.cpp",
+			"path": "../../../addons/ofxImGui/src/DefaultTheme.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2D83C027-DBFD-4E4E-BC8A-1D53A609ABF6": {
+			"fileRef": "835DD759-FDF1-445E-884F-BE8F6AAE0705",
+			"isa": "PBXBuildFile"
+		},
+		"2DC9B505-9A88-4486-9508-10CAFD166E21": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscPrintReceivedElements.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"2EBCB383-88A1-4699-BB51-2A64693E6DFE": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "TimerListener.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/ip/TimerListener.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"31FAF0D3-02BC-4375-A527-2C397CCA89BD": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "UdpSocket.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"353E0484-6DCA-4885-93F6-C255BB07364E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "imstb_rectpack.h",
+			"path": "../../../addons/ofxImGui/libs/imgui/src/imstb_rectpack.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"36BC2401-925E-4B9A-B0FF-F8E0806D002A": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscSender.cpp",
+			"path": "../../../addons/ofxOsc/src/ofxOscSender.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"39AC890C-5D07-4B8F-967E-132EA948FFC2": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscPrintReceivedElements.cpp",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"39D340D7-CEE6-4D76-8F9D-4EA1D71B1002": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscParameterSync.h",
+			"path": "../../../addons/ofxOsc/src/ofxOscParameterSync.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3C4F439A-3B33-4060-A71A-8514C5A1B0F4": {
+			"children": [
+				"1B6D09DD-6E63-4055-A873-106A7434C46E",
+				"962EA32B-0CDA-43A7-B149-9614D5775038",
+				"6C8A5533-5419-480B-B844-77A2FD44E3FC",
+				"E60E9AA3-04E7-48CC-9747-EA40A8DB8EBF",
+				"F64AEEF7-77A0-40A9-8F43-8EC98155EE4C",
+				"F5781673-FB4D-4E9B-BDA9-0741BADB49D5",
+				"BC8C3306-F7D4-4000-842F-4AF6CBCBB233",
+				"39D340D7-CEE6-4D76-8F9D-4EA1D71B1002",
+				"5F3817EC-2516-4A1E-AD10-115FCDD6D5E7",
+				"9030C313-61B5-48A9-BB34-48477D6F0F1B",
+				"36BC2401-925E-4B9A-B0FF-F8E0806D002A",
+				"7D6EAFE4-4515-4603-B843-46E7371391B0"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxOsc/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3CB0EB42-19AA-4515-A3D0-272D542AE2A7": {
+			"fileRef": "203184D7-56FB-422A-98FF-328FD9F23D93",
+			"isa": "PBXBuildFile"
+		},
+		"41C162DD-947D-4C8C-822E-EF18E3B44CA4": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "PacketListener.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/ip/PacketListener.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"43ED90C8-4EDA-470F-A4D6-10B681D61203": {
+			"children": [
+				"A6112FD2-F621-43C8-8AB2-82B78F309B8D",
+				"5D110353-1A79-4DFF-8816-E425C7CA9EE0",
+				"E57E88C1-55F4-4362-AA5C-16B91E37A1BC",
+				"44B0F559-D844-4CFE-8540-46528BE03390",
+				"7FE58EE6-D8B2-440D-B13B-900691C7BE37",
+				"9FCE0297-5EE9-4E84-A7E1-5062B4C57D33",
+				"353E0484-6DCA-4885-93F6-C255BB07364E",
+				"A5702E52-FD26-43E5-BA89-BD3EAF424235",
+				"CD623657-9734-44E1-B4C7-FF8F1134527A"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxImGui/libs/imgui/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"44B0F559-D844-4CFE-8540-46528BE03390": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "imgui_draw.cpp",
+			"path": "../../../addons/ofxImGui/libs/imgui/src/imgui_draw.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"452E33C9-C3E8-4D8C-A30C-CD5F3948EE68": {
+			"fileRef": "9FCE0297-5EE9-4E84-A7E1-5062B4C57D33",
+			"isa": "PBXBuildFile"
+		},
+		"4A36AD9F-EE17-4EF1-8716-6DEDEA655E98": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "EngineOpenGLES.cpp",
+			"path": "../../../addons/ofxImGui/src/EngineOpenGLES.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"4A88DA26-3E13-4F1A-9B45-58AF5C04925C": {
+			"children": [
+				"103261B5-74C3-4479-A15E-0854CB887C69"
+			],
+			"isa": "PBXGroup",
+			"name": "oscpack",
+			"path": "../../../addons/ofxOsc/libs/oscpack",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"57879E31-40F5-499C-82C1-09664195B248": {
+			"children": [
+				"B7BF74BA-9BA2-4E29-8CCA-B9A060C8557F"
+			],
+			"isa": "PBXGroup",
+			"name": "libs",
+			"path": "../../../addons/ofxImGui/libs",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"5D110353-1A79-4DFF-8816-E425C7CA9EE0": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "imgui.h",
+			"path": "../../../addons/ofxImGui/libs/imgui/src/imgui.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"5F3817EC-2516-4A1E-AD10-115FCDD6D5E7": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscReceiver.cpp",
+			"path": "../../../addons/ofxOsc/src/ofxOscReceiver.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"6069325A-1549-416B-AB4E-C9F3C6600CFF": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscHostEndianness.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscHostEndianness.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"62304547-003C-46D3-969D-1F6E4B27D91D": {
+			"fileRef": "39AC890C-5D07-4B8F-967E-132EA948FFC2",
+			"isa": "PBXBuildFile"
+		},
+		"6C8A5533-5419-480B-B844-77A2FD44E3FC": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscBundle.cpp",
+			"path": "../../../addons/ofxOsc/src/ofxOscBundle.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"72FFB1DE-B8D6-4544-BE6C-D064E08896B2": {
+			"fileRef": "4A36AD9F-EE17-4EF1-8716-6DEDEA655E98",
+			"isa": "PBXBuildFile"
+		},
+		"763DA12E-3643-406A-8DFF-D652CDCF64D2": {
+			"children": [
+				"4A88DA26-3E13-4F1A-9B45-58AF5C04925C"
+			],
+			"isa": "PBXGroup",
+			"name": "libs",
+			"path": "../../../addons/ofxOsc/libs",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7D6EAFE4-4515-4603-B843-46E7371391B0": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscSender.h",
+			"path": "../../../addons/ofxOsc/src/ofxOscSender.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7DA4DCE3-782D-4327-B4A9-D7BCD12E3A4B": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxImGuiLoggerChannel.cpp",
+			"path": "../../../addons/ofxImGui/src/ofxImGuiLoggerChannel.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"7FE58EE6-D8B2-440D-B13B-900691C7BE37": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "imgui_internal.h",
+			"path": "../../../addons/ofxImGui/libs/imgui/src/imgui_internal.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"82A5D1D9-9731-43EC-B0E4-74DFFF10C293": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "UdpSocket.cpp",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/ip/posix/UdpSocket.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"835DD759-FDF1-445E-884F-BE8F6AAE0705": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscTypes.cpp",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"87E55136-84F3-4C1E-8097-D885289DF71A": {
+			"children": [
+				"763DA12E-3643-406A-8DFF-D652CDCF64D2",
+				"3C4F439A-3B33-4060-A71A-8514C5A1B0F4"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxOsc",
+			"path": "../../../addons/ofxOsc",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"8D3E0F7D-FFB7-4630-B6CE-BAD1E394B81A": {
+			"fileRef": "6C8A5533-5419-480B-B844-77A2FD44E3FC",
+			"isa": "PBXBuildFile"
+		},
+		"8F016D78-B425-4449-A36E-703B24FC82FA": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "EngineVk.cpp",
+			"path": "../../../addons/ofxImGui/src/EngineVk.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9030C313-61B5-48A9-BB34-48477D6F0F1B": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscReceiver.h",
+			"path": "../../../addons/ofxOsc/src/ofxOscReceiver.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"91937B81-C0A4-49D6-9EDF-993DF491CF70": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscReceivedElements.cpp",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"962EA32B-0CDA-43A7-B149-9614D5775038": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscArg.h",
+			"path": "../../../addons/ofxOsc/src/ofxOscArg.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"99E90321-815F-4E62-9E0D-8F9EAFA038AA": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscException.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscException.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9FCE0297-5EE9-4E84-A7E1-5062B4C57D33": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "imgui_widgets.cpp",
+			"path": "../../../addons/ofxImGui/libs/imgui/src/imgui_widgets.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A4971D49-EE49-47D8-8F9C-3E867FF40AE7": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "BaseEngine.h",
+			"path": "../../../addons/ofxImGui/src/BaseEngine.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A5702E52-FD26-43E5-BA89-BD3EAF424235": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "imstb_textedit.h",
+			"path": "../../../addons/ofxImGui/libs/imgui/src/imstb_textedit.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A6112FD2-F621-43C8-8AB2-82B78F309B8D": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "imgui.cpp",
+			"path": "../../../addons/ofxImGui/libs/imgui/src/imgui.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A6C0C1D2-4EA9-481E-94E8-F008663A750A": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscTypes.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AA49376F-E300-43D1-ABBF-BFCF84AB47DD": {
+			"fileRef": "F4180751-FD87-4598-B9A3-A05B1779A73E",
+			"isa": "PBXBuildFile"
+		},
+		"AB0376FD-7B5D-4CFA-BBB5-8CBF9F2F382C": {
+			"fileRef": "7DA4DCE3-782D-4327-B4A9-D7BCD12E3A4B",
+			"isa": "PBXBuildFile"
+		},
+		"AC1DBBC0-3F12-4F76-9744-C3974557AC72": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "EngineOpenGLES.h",
+			"path": "../../../addons/ofxImGui/src/EngineOpenGLES.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"AFA7AA53-A4A5-48E7-99FA-684461781820": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "BaseTheme.h",
+			"path": "../../../addons/ofxImGui/src/BaseTheme.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B2541AC1-CED4-478B-9907-7988A590B21B": {
+			"fileRef": "B30352F7-5BB1-48BC-8A35-83392E5EEFEE",
+			"isa": "PBXBuildFile"
+		},
+		"B2DCFCEB-4F7D-471F-BE53-2B7CBE012470": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxImGui.h",
+			"path": "../../../addons/ofxImGui/src/ofxImGui.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B30352F7-5BB1-48BC-8A35-83392E5EEFEE": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "IpEndpointName.cpp",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B380BD03-43C8-408D-9D76-5CD76C06FF0F": {
+			"fileRef": "29C52CB6-C09D-4A62-BE9A-7EA58A0A63C6",
+			"isa": "PBXBuildFile"
+		},
+		"B588F099-5916-42D0-8700-57C10E7BDC80": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxImGuiLoggerChannel.h",
+			"path": "../../../addons/ofxImGui/src/ofxImGuiLoggerChannel.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B7BF74BA-9BA2-4E29-8CCA-B9A060C8557F": {
+			"children": [
+				"43ED90C8-4EDA-470F-A4D6-10B681D61203"
+			],
+			"isa": "PBXGroup",
+			"name": "imgui",
+			"path": "../../../addons/ofxImGui/libs/imgui",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B87C9C07-B9F3-4AB3-90E2-8DF609A68216": {
+			"fileRef": "91937B81-C0A4-49D6-9EDF-993DF491CF70",
+			"isa": "PBXBuildFile"
+		},
+		"B8C17574-37C9-479F-9C77-C3A1A8B2D23B": {
+			"fileRef": "0DE8E07F-C187-4BA8-BBEF-78D1D3DD1B89",
+			"isa": "PBXBuildFile"
+		},
+		"BB4B014C10F69532006C3DED": {
+			"children": [
+				"19C3D1E2-6839-41E2-90DF-73F9B168CFF5",
+				"87E55136-84F3-4C1E-8097-D885289DF71A"
+			],
+			"isa": "PBXGroup",
+			"name": "addons",
+			"path": "../../../addons",
+			"sourceTree": "<group>"
+		},
+		"BB4BFB97-F9EE-4E27-9EA6-006732D71C6C": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "OscOutboundPacketStream.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BC8C3306-F7D4-4000-842F-4AF6CBCBB233": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscParameterSync.cpp",
+			"path": "../../../addons/ofxOsc/src/ofxOscParameterSync.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BE5FAE50-586A-46F3-A8C7-10D6DD9A459D": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ImHelpers.h",
+			"path": "../../../addons/ofxImGui/src/ImHelpers.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BEEE5B23-88D6-45D6-8027-6D08295F5D07": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "BaseEngine.cpp",
+			"path": "../../../addons/ofxImGui/src/BaseEngine.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C5F08139-CA22-4548-8FA5-FFA24ED80D04": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "EngineVk.h",
+			"path": "../../../addons/ofxImGui/src/EngineVk.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C76CDDE2-883C-45B5-ADFC-198786BE5DA5": {
+			"fileRef": "E57E88C1-55F4-4362-AA5C-16B91E37A1BC",
+			"isa": "PBXBuildFile"
+		},
+		"C9924E5D-EEC8-4833-97FD-7CE70E22E64E": {
+			"fileRef": "F7A3552C-E1CC-4C6F-B0F2-0DC84599551E",
+			"isa": "PBXBuildFile"
+		},
+		"CD623657-9734-44E1-B4C7-FF8F1134527A": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "imstb_truetype.h",
+			"path": "../../../addons/ofxImGui/libs/imgui/src/imstb_truetype.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D2170E26-226D-4316-8AE1-364D865A0EBF": {
+			"children": [
+				"BEEE5B23-88D6-45D6-8027-6D08295F5D07",
+				"A4971D49-EE49-47D8-8F9C-3E867FF40AE7",
+				"AFA7AA53-A4A5-48E7-99FA-684461781820",
+				"29C52CB6-C09D-4A62-BE9A-7EA58A0A63C6",
+				"DF675FAC-37CD-4945-B8C5-FB0D7A24257E",
+				"F7A3552C-E1CC-4C6F-B0F2-0DC84599551E",
+				"F5CB3E2D-600A-4A98-ACDC-594BAC4C30BF",
+				"4A36AD9F-EE17-4EF1-8716-6DEDEA655E98",
+				"AC1DBBC0-3F12-4F76-9744-C3974557AC72",
+				"8F016D78-B425-4449-A36E-703B24FC82FA",
+				"C5F08139-CA22-4548-8FA5-FFA24ED80D04",
+				"F4180751-FD87-4598-B9A3-A05B1779A73E",
+				"D9A55FA6-FB6E-44D7-8F3B-057708FF1544",
+				"203184D7-56FB-422A-98FF-328FD9F23D93",
+				"BE5FAE50-586A-46F3-A8C7-10D6DD9A459D",
+				"FB5E8B51-1058-4183-8D66-2B8089F61020",
+				"B2DCFCEB-4F7D-471F-BE53-2B7CBE012470",
+				"7DA4DCE3-782D-4327-B4A9-D7BCD12E3A4B",
+				"B588F099-5916-42D0-8700-57C10E7BDC80"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "../../../addons/ofxImGui/src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D4D73B40-D483-41B5-B2B9-F086412891B2": {
+			"children": [
+				"F96EF262-F9C1-44BA-B337-606553E528B9",
+				"99E90321-815F-4E62-9E0D-8F9EAFA038AA",
+				"6069325A-1549-416B-AB4E-C9F3C6600CFF",
+				"0DE8E07F-C187-4BA8-BBEF-78D1D3DD1B89",
+				"BB4BFB97-F9EE-4E27-9EA6-006732D71C6C",
+				"235AC5D0-60FC-40B9-89E3-EA5C1476AA61",
+				"39AC890C-5D07-4B8F-967E-132EA948FFC2",
+				"2DC9B505-9A88-4486-9508-10CAFD166E21",
+				"91937B81-C0A4-49D6-9EDF-993DF491CF70",
+				"1F6AE525-6534-4FA2-BA67-BF9443676FC6",
+				"835DD759-FDF1-445E-884F-BE8F6AAE0705",
+				"A6C0C1D2-4EA9-481E-94E8-F008663A750A"
+			],
+			"isa": "PBXGroup",
+			"name": "osc",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"D6BC0B9F-2BF7-43E5-8422-5255ACF06247": {
+			"fileRef": "44B0F559-D844-4CFE-8540-46528BE03390",
+			"isa": "PBXBuildFile"
+		},
+		"D9A55FA6-FB6E-44D7-8F3B-057708FF1544": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "Gui.h",
+			"path": "../../../addons/ofxImGui/src/Gui.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DAC43A09-515E-4820-B677-1DD4A5FE2A91": {
+			"fileRef": "F0184082-EE07-42AC-A2A8-29C015116EEE",
+			"isa": "PBXBuildFile"
+		},
+		"DDB8D2F5-0B84-47F2-B594-9A551FFDA12C": {
+			"children": [
+				"F0184082-EE07-42AC-A2A8-29C015116EEE",
+				"82A5D1D9-9731-43EC-B0E4-74DFFF10C293"
+			],
+			"isa": "PBXGroup",
+			"name": "posix",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/ip/posix",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DF675FAC-37CD-4945-B8C5-FB0D7A24257E": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "DefaultTheme.h",
+			"path": "../../../addons/ofxImGui/src/DefaultTheme.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E42962A92163ECCD00A6A9E2": {
+			"alwaysOutOfDate": "1",
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"name": "Run Script — Compile OF",
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "echo \"💾 Compiling Openframeworks\"\nxcodebuild -project \"$OF_PATH/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj\" -target openFrameworks -configuration \"${CONFIGURATION}\"  CLANG_CXX_LANGUAGE_STANDARD=$CLANG_CXX_LANGUAGE_STANDARD MACOSX_DEPLOYMENT_TARGET=$MACOSX_DEPLOYMENT_TARGET GCC_PREPROCESSOR_DEFINITIONS=$USER_PREPROCESSOR_DEFINITIONS\n",
+			"showEnvVarsInLog": "0"
+		},
+		"E4A5B60F29BAAAE400C2D356": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "6",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B4A0A3A1720003C02F2": {
+			"children": [
+				"191CD6FA2847E21E0085CBB6",
+				"E4B6FCAD0C3E899E008CF71C",
+				"E4EB6923138AFD0F00A09F29",
+				"E4B69E1C0A3A1BDC003C02F2",
+				"191EF70929D778A400F35F26",
+				"BB4B014C10F69532006C3DED",
+				"E4B69B5B0A3A1756003C02F2"
+			],
+			"isa": "PBXGroup",
+			"sourceTree": "<group>"
+		},
+		"E4B69B4C0A3A1720003C02F2": {
+			"attributes": {
+				"LastUpgradeCheck": "0600"
+			},
+			"buildConfigurationList": "E4B69B4D0A3A1720003C02F2",
+			"compatibilityVersion": "Xcode 3.2",
+			"developmentRegion": "en",
+			"hasScannedForEncodings": "0",
+			"isa": "PBXProject",
+			"knownRegions": [
+				"en",
+				"Base"
+			],
+			"mainGroup": "E4B69B4A0A3A1720003C02F2",
+			"productRefGroup": "E4B69B4A0A3A1720003C02F2",
+			"projectDirPath": "",
+			"projectRoot": "",
+			"targets": [
+				"E4B69B5A0A3A1756003C02F2"
+			]
+		},
+		"E4B69B4D0A3A1720003C02F2": {
+			"buildConfigurations": [
+				"E4B69B4E0A3A1720003C02F2",
+				"E4B69B4F0A3A1720003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B4E0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "NO",
+				"ENABLE_TESTABILITY": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "0",
+				"GCC_WARN_UNUSED_VARIABLE": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B4F0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "3",
+				"GCC_UNROLL_LOOPS": "YES",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69B580A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [
+				"E4B69E200A3A1BDC003C02F2",
+				"E4B69E210A3A1BDC003C02F2",
+				"177BD465-CB04-4943-897F-5489C2FF5E7B",
+				"C76CDDE2-883C-45B5-ADFC-198786BE5DA5",
+				"D6BC0B9F-2BF7-43E5-8422-5255ACF06247",
+				"452E33C9-C3E8-4D8C-A30C-CD5F3948EE68",
+				"1F3B237E-E95C-459A-A7AC-EB396C28449E",
+				"B380BD03-43C8-408D-9D76-5CD76C06FF0F",
+				"C9924E5D-EEC8-4833-97FD-7CE70E22E64E",
+				"72FFB1DE-B8D6-4544-BE6C-D064E08896B2",
+				"180CBED9-81C8-4B35-A022-7C65D581F651",
+				"AA49376F-E300-43D1-ABBF-BFCF84AB47DD",
+				"3CB0EB42-19AA-4515-A3D0-272D542AE2A7",
+				"AB0376FD-7B5D-4CFA-BBB5-8CBF9F2F382C",
+				"B2541AC1-CED4-478B-9907-7988A590B21B",
+				"DAC43A09-515E-4820-B677-1DD4A5FE2A91",
+				"12FB6B5E-D850-49CC-8E19-D9D34BCC9E51",
+				"B8C17574-37C9-479F-9C77-C3A1A8B2D23B",
+				"62304547-003C-46D3-969D-1F6E4B27D91D",
+				"B87C9C07-B9F3-4AB3-90E2-8DF609A68216",
+				"2D83C027-DBFD-4E4E-BC8A-1D53A609ABF6",
+				"8D3E0F7D-FFB7-4630-B6CE-BAD1E394B81A",
+				"F7A831CC-629A-4489-85CC-35E1096A4AE0",
+				"0825D339-1368-4EEA-9415-694E97D01A81",
+				"28FF64CC-8108-42C7-9FE7-C683981E0BCB",
+				"2487D527-11E4-4F71-B902-4A3139696D3D"
+			],
+			"isa": "PBXSourcesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B590A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"isa": "PBXFrameworksBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B5A0A3A1756003C02F2": {
+			"buildConfigurationList": "E4B69B5F0A3A1757003C02F2",
+			"buildPhases": [
+				"E42962A92163ECCD00A6A9E2",
+				"E4B69B580A3A1756003C02F2",
+				"E4B69B590A3A1756003C02F2",
+				"E4C2427710CC5ABF004149E2",
+				"E4A5B60F29BAAAE400C2D356",
+				"19B789C429E5AB4A0082E9B8"
+			],
+			"buildRules": [],
+			"dependencies": [],
+			"isa": "PBXNativeTarget",
+			"name": "WalkeDetection3",
+			"productName": "myOFApp",
+			"productReference": "E4B69B5B0A3A1756003C02F2",
+			"productType": "com.apple.product-type.application"
+		},
+		"E4B69B5B0A3A1756003C02F2": {
+			"explicitFileType": "wrapper.application",
+			"includeInIndex": "0",
+			"isa": "PBXFileReference",
+			"path": "WalkeDetection3Debug.app",
+			"sourceTree": "BUILT_PRODUCTS_DIR"
+		},
+		"E4B69B5F0A3A1757003C02F2": {
+			"buildConfigurations": [
+				"E4B69B600A3A1757003C02F2",
+				"E4B69B610A3A1757003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B600A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "NO",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"GCC_DYNAMIC_NO_PIC": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"../../../addons/ofxImGui/libs",
+					"../../../addons/ofxImGui/libs/imgui",
+					"../../../addons/ofxImGui/libs/imgui/src",
+					"../../../addons/ofxImGui/src",
+					"../../../addons/ofxOsc/libs",
+					"../../../addons/ofxOsc/libs/oscpack",
+					"../../../addons/ofxOsc/libs/oscpack/src",
+					"../../../addons/ofxOsc/libs/oscpack/src/ip",
+					"../../../addons/ofxOsc/libs/oscpack/src/ip/posix",
+					"../../../addons/ofxOsc/libs/oscpack/src/osc",
+					"../../../addons/ofxOsc/src"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF_DEBUG)"
+				]
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B610A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "YES",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"../../../addons/ofxImGui/libs",
+					"../../../addons/ofxImGui/libs/imgui",
+					"../../../addons/ofxImGui/libs/imgui/src",
+					"../../../addons/ofxImGui/src",
+					"../../../addons/ofxOsc/libs",
+					"../../../addons/ofxOsc/libs/oscpack",
+					"../../../addons/ofxOsc/libs/oscpack/src",
+					"../../../addons/ofxOsc/libs/oscpack/src/ip",
+					"../../../addons/ofxOsc/libs/oscpack/src/ip/posix",
+					"../../../addons/ofxOsc/libs/oscpack/src/osc",
+					"../../../addons/ofxOsc/src"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF)"
+				],
+				"baseConfigurationReference": "E4EB6923138AFD0F00A09F29"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69E1C0A3A1BDC003C02F2": {
+			"children": [
+				"E4B69E1D0A3A1BDC003C02F2",
+				"E4B69E1E0A3A1BDC003C02F2",
+				"E4B69E1F0A3A1BDC003C02F2"
+			],
+			"isa": "PBXGroup",
+			"path": "src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1D0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.cpp",
+			"name": "main.cpp",
+			"path": "src/main.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1E0A3A1BDC003C02F2": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofApp.cpp",
+			"path": "src/ofApp.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1F0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.c.h",
+			"name": "ofApp.h",
+			"path": "src/ofApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E200A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1D0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B69E210A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1E0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B6FCAD0C3E899E008CF71C": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.xml",
+			"path": "openFrameworks-Info.plist",
+			"sourceTree": "<group>"
+		},
+		"E4C2427710CC5ABF004149E2": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "10",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4EB6923138AFD0F00A09F29": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.xcconfig",
+			"path": "Project.xcconfig",
+			"sourceTree": "<group>"
+		},
+		"E57E88C1-55F4-4362-AA5C-16B91E37A1BC": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "imgui_demo.cpp",
+			"path": "../../../addons/ofxImGui/libs/imgui/src/imgui_demo.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E60E9AA3-04E7-48CC-9747-EA40A8DB8EBF": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscBundle.h",
+			"path": "../../../addons/ofxOsc/src/ofxOscBundle.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F0184082-EE07-42AC-A2A8-29C015116EEE": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "NetworkingUtils.cpp",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/ip/posix/NetworkingUtils.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F08548B3-14C3-4B15-A14A-1A0936D2DF55": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "NetworkingUtils.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F4180751-FD87-4598-B9A3-A05B1779A73E": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "Gui.cpp",
+			"path": "../../../addons/ofxImGui/src/Gui.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F460FB96-1D94-4E0D-8BC1-FE9F00290F9B": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "IpEndpointName.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F5781673-FB4D-4E9B-BDA9-0741BADB49D5": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscMessage.h",
+			"path": "../../../addons/ofxOsc/src/ofxOscMessage.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F5CB3E2D-600A-4A98-ACDC-594BAC4C30BF": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "EngineGLFW.h",
+			"path": "../../../addons/ofxImGui/src/EngineGLFW.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F64AEEF7-77A0-40A9-8F43-8EC98155EE4C": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofxOscMessage.cpp",
+			"path": "../../../addons/ofxOsc/src/ofxOscMessage.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F7A3552C-E1CC-4C6F-B0F2-0DC84599551E": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "EngineGLFW.cpp",
+			"path": "../../../addons/ofxImGui/src/EngineGLFW.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F7A831CC-629A-4489-85CC-35E1096A4AE0": {
+			"fileRef": "F64AEEF7-77A0-40A9-8F43-8EC98155EE4C",
+			"isa": "PBXBuildFile"
+		},
+		"F96EF262-F9C1-44BA-B337-606553E528B9": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "MessageMappingOscPacketListener.h",
+			"path": "../../../addons/ofxOsc/libs/oscpack/src/osc/MessageMappingOscPacketListener.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"FB5E8B51-1058-4183-8D66-2B8089F61020": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "imconfig.h",
+			"path": "../../../addons/ofxImGui/src/imconfig.h",
+			"sourceTree": "SOURCE_ROOT"
+		}
+	},
+	"openFrameworksProjectGeneratorVersion": "21",
+	"rootObject": "E4B69B4C0A3A1720003C02F2"
+}

@@ -1,0 +1,15 @@
+# ビルド成果物
+bin/*.app/
+bin/*.app.dSYM/
+obj/
+build/
+DerivedData/
+*.o
+*.d
+
+# Xcode のユーザー固有データ
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# macOS
+.DS_Store
